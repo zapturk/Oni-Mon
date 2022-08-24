@@ -413,4 +413,5 @@ parameters/Turn/blend_position = Vector2( 0, 0 )
 parameters/Walk/blend_position = Vector2( 0, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2( 8, 8 )
 current = true
