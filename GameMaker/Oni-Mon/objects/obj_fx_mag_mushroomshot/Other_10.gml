@@ -1,0 +1,2 @@
+fx_deferred_projectile(spr_fx_shroomshot,bfxis_leaf)
+sfx(snd_leafexplode)
