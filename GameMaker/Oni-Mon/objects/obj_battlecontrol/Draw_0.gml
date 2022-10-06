@@ -11,6 +11,6 @@ message_draw()
 
 
 if(DEBUG_MODE){
-	draw_font_settings(font_debug,c_white,0,0)
+	draw_font_settings(font_debug,c_black,0,0)
 	draw_text(0,0,tsprintf("State: %\nSubSt: %\nCntr:  %",state,substate,cntr))
 }

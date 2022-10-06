@@ -12,7 +12,7 @@ if(message_active){
 else{
 	//Get a new message!
 	if(!battle_messages_empty()){
-		draw_font_settings(font_mainmsg,c_white,0,0)
+		draw_font_settings(font_mainmsg,c_black,0,0)
 		fullstring = string_wrap(battle_messages_pop(),messagebox_width*0.9)
 		drawstring = ""
 		drawchars  = 0
@@ -360,12 +360,12 @@ switch(state){
 					var fw = room_width*0.5;
 					ggui_frame(room_width-fw,other.messagebox_top,fw,other.messagebox_height,spr_messagebox)
 					ggui_menu_preallocate(2,2)
-					ggui_element_text_settings(font_mainmsg,c_white,0,0)
+					ggui_element_text_settings(font_mainmsg,c_black,0,0)
 					ggui_menu_add_option_text(mev_battle_attack,	"Fight",	"Attack with one of your moves.")
 					ggui_menu_add_option_text(mev_battle_mons,		"Oni",		"Switch Oni.")
 					ggui_menu_add_option_text(mev_battle_item,		"Item",		"Use an item.")
 					ggui_menu_add_option_text(mev_battle_escape,	"Run",		"Run away from battle.")
-					ggui_element_text_settings(font_mainmsg,c_white,0,0)
+					ggui_element_text_settings(font_mainmsg,c_black,0,0)
 					ggui_element_text(-ggui_frame_get_coord_x((room_width-fw)-24),0.15,string_wrap(tsprintf("What should % do?",other.action_monster.name),fw))
 					script_destroy = mev_battle_canceltoprevious
 				}

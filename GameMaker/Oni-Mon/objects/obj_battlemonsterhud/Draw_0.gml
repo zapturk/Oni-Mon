@@ -8,10 +8,10 @@ if(instance_exists(monster)){
 		xx = x + xscale*deltax - sz*0.5
 		yy = y + deltay*(32 + 16*fullhp)
 		var amp = monster.amp_id;
-		draw_font_settings(font_nfat,c_white,0,2)
+		draw_font_settings(font_nfat,c_black,0,2)
 		draw_text(xx,yy,monster_get_name(amp))
 		
-		draw_font_settings(font_n,c_white,2,2)
+		draw_font_settings(font_n,c_black,2,2)
 		draw_text(xx + sz,yy,tsprintf("Lv.%",global.active_monster_party[amp,amp_LEVEL]))
 		
 		var mhp = monster_get_mhp(amp), hpc = global.active_monster_party[amp,amp_HP];
@@ -31,7 +31,7 @@ if(instance_exists(monster)){
 			draw_healthbar(xx,yy,xx + sz,yy + 12,currhp*100,$323232,ccccc,   ccccc,0,true,true)
 		}
 		if(fullhp){
-			draw_font_settings(font_nfat,c_white,0,0)
+			draw_font_settings(font_nfat,c_black,0,0)
 			draw_text(xx,yy + 15,tsprintf("HP: %/%",hpc,mhp))
 		}
 		

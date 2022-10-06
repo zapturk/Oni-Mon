@@ -22,7 +22,7 @@ function mev_pause_moncyclopedia() {
 		ggui_frame(0,0,VIEW_W*0.4,VIEW_H,spr_messagebox)
 		ggui_frame_set_scrolling(false,true,1,10,false,true)
 		var cmax = 10, yy, hh, mev;
-		ggui_element_text_settings(font_mainmsg,c_white,0,1)
+		ggui_element_text_settings(font_mainmsg,c_black,0,1)
 		for(c = 0;c < cmax;c++){
 			mev= c
 			yy = lerp(0.05,0.95,c/cmax)
@@ -54,17 +54,17 @@ function mev_pause_moncyclopedia() {
 		//Upper right pane: monster sprite + name
 		ggui_frame(VIEW_W*0.4,0,VIEW_W*0.6,VIEW_H*0.5,spr_messagebox)
 		ggui_element_sprite_current(0.5,0.8)
-		ggui_element_text_settings(font_mainmsg,c_white,1,0)
+		ggui_element_text_settings(font_mainmsg,c_black,1,0)
 		ggui_element_text_current(0.5,0.8)
 	
 		//Lower right pane: flavor text
 		ggui_frame(VIEW_W*0.4,VIEW_H*0.5,VIEW_W*0.6,VIEW_H*0.4,spr_messagebox)
-		ggui_element_text_settings(font_n,c_white,0,0)
+		ggui_element_text_settings(font_n,c_black,0,0)
 		ggui_element_desc_current(0.1,0.1)
 	
 		//Lowest right pane: total statistics
 		ggui_frame(VIEW_W*0.4,VIEW_H*0.9,VIEW_W*0.6,VIEW_H*0.1,spr_messagebox)
-		ggui_element_text_settings(font_nfat,c_white,1,1)
+		ggui_element_text_settings(font_nfat,c_black,1,1)
 		ggui_element_text(0.5,0.5,tsprintf("Species Witnessed: %          Species Possessed: %",global.monsters_seen_total,global.monsters_caught_total))
 	}
 

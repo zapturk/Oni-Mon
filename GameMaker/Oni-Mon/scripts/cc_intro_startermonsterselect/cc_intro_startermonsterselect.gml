@@ -10,7 +10,7 @@ function cc_intro_startermonsterselect() {
 	with(instance_create_depth(x,y,depth-1,obj_gguimenu)){
 		ggui_frame(VIEW_W*0.1,VIEW_W*0.35,VIEW_W*0.8,VIEW_H*0.25,NONE)//Yeah, we can do invisible frames!
 		ggui_menu_preallocate(mons,1)
-		ggui_element_text_settings(font_mainmsg,c_white,1,0)
+		ggui_element_text_settings(font_mainmsg,c_black,1,0)
 		for(var c = 0; c < mons; c++){
 			my_monster[c] = mon[c]
 			xx = (c + 0.5)*ww

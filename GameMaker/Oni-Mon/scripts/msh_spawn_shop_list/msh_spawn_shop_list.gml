@@ -14,9 +14,9 @@ function msh_spawn_shop_list(argument0, argument1) {
 	var hh = ggui_frame_get_coord_y((VIEW_H*0.8)/mensz) - ggui_frame_get_coord_y(16)
 	for(c = 0; c < mensz; c++){
 		var yy = lerp(0.1,0.9,c/mensz);
-		ggui_element_text_settings(font_mainmsg,c_white,0,0)
+		ggui_element_text_settings(font_mainmsg,c_black,0,0)
 		ggui_element_arbtext_scrollable(0.1,yy + ggui_frame_get_coord_y(4),0,c,0)
-		ggui_element_text_settings(font_mainmsg,c_white,2,0)
+		ggui_element_text_settings(font_mainmsg,c_black,2,0)
 		ggui_element_arbtext_scrollable(0.9,yy + ggui_frame_get_coord_y(4),0,c,1)
 	}
 
@@ -48,12 +48,12 @@ function msh_spawn_shop_list(argument0, argument1) {
 
 	//Finally, add a description box at the bottom
 	ggui_frame(0,VIEW_H*0.70,VIEW_W,VIEW_H*0.15,spr_messagebox)
-	ggui_element_text_settings(font_n,c_white,0,0)
+	ggui_element_text_settings(font_n,c_black,0,0)
 	ggui_element_desc_current(0.1,0.2)
 
 	//Also another at the top
 	ggui_frame(0,VIEW_H*0.85,VIEW_W,VIEW_H*0.15,spr_messagebox)
-	ggui_element_text_settings(font_mainmsg,c_white,0,1)
+	ggui_element_text_settings(font_mainmsg,c_black,0,1)
 	//Memorize money frame so we can overwrite it later (a bit of a hack...)
 	my_money_element = ggui_element_text(0.5,0.5,tsprintf("Money: ¤%",global.player_money))
 	my_money_frame   = ggui_frames - 1

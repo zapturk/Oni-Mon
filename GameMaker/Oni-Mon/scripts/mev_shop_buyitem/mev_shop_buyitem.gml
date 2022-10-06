@@ -16,13 +16,13 @@ function mev_shop_buyitem() {
 	    ggui_menu_preallocate(100,1)
 	    ggui_frame_set_scrolling(true,false,1,1,false,false)
     
-	    ggui_element_text_settings(font_mainmsg,c_white,1,0)
+	    ggui_element_text_settings(font_mainmsg,c_black,1,0)
 	    ggui_element_text(0.5,ggui_frame_get_coord_y(8),"How many?\n<           >")
-	    ggui_element_text_settings(font_mainmsg,c_white,1,0)
+	    ggui_element_text_settings(font_mainmsg,c_black,1,0)
 	    ggui_element_arbtext_scrollable(0.5,ggui_frame_get_coord_y(8),0,0,0)
-	    ggui_element_text_settings(font_n,c_white,2,0)
+	    ggui_element_text_settings(font_n,c_black,2,0)
 	    ggui_element_arbtext_scrollable(0.85,1 - ggui_frame_get_coord_y(24),0,0,1)
-	    ggui_element_text_settings(font_n,c_white,0,0)
+	    ggui_element_text_settings(font_n,c_black,0,0)
 	    ggui_element_text(0.15,1 - ggui_frame_get_coord_y(24),"Total Cost:")
 
 	    for(var c = 0; c <= 99; c++){

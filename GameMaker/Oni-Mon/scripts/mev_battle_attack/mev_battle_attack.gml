@@ -21,7 +21,7 @@ function mev_battle_attack() {
 			ggui_frame_set_scrolling(false,false,1,MONSTER_MAX_NUMBER_OF_MOVES,false,true)
 	
 			//Main data
-			ggui_element_text_settings(font_mainmsg,c_white,0,0)
+			ggui_element_text_settings(font_mainmsg,c_black,0,0)
 			for(var c = 0; c < MONSTER_MAX_NUMBER_OF_MOVES; c++){
 				var mv = amp_read_var(obj_battlecontrol.action_monster.amp_id,amp_MOVE1 + c)
 				my_move[c] = mv
@@ -41,9 +41,9 @@ function mev_battle_attack() {
 	
 			//Frame with type/MP info
 			ggui_frame(ggui_frame_l[0] + ggui_frame_w[0]*0.5,ggui_frame_t[0] - ggui_frame_h[0]*0.7,ggui_frame_w[0]*0.5,ggui_frame_h[0]*0.7,spr_messagebox)
-			ggui_element_text_settings(font_mainmsg,c_white,0,0)
+			ggui_element_text_settings(font_mainmsg,c_black,0,0)
 			ggui_element_arbtext(0.1,0.15,0)
-			ggui_element_text_settings(font_mainmsg,c_white,2,0)
+			ggui_element_text_settings(font_mainmsg,c_black,2,0)
 			ggui_element_arbtext(0.9,0.50,1)
 			for(var c = 0; c < MONSTER_MAX_NUMBER_OF_MOVES; c++){
 				var dx = c mod 2, dy = c div 2;

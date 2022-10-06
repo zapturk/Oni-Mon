@@ -232,7 +232,7 @@ function ggui_draw() {
 						var ccc = merge_color_triple(c_red,c_yellow,c_green,hpp)
 						draw_healthbar(xx,yy,xx + lerp(0,ggui_frame_w[c],ggui_frame_element_halign[c,d]),yy + 12,hpp*100,c_black,ccc,ccc,0,true,true)
 						//Draw current health as text as well
-						draw_font_settings(font_n,c_white,1,0)
+						draw_font_settings(font_n,c_black,1,0)
 						draw_text(xx + lerp(0,ggui_frame_w[c],ggui_frame_element_halign[c,d]*0.5),yy + 14,tsprintf("HP: % / %",hpa,hpm))
 					}
 				break
@@ -246,7 +246,7 @@ function ggui_draw() {
 						var ccc = merge_color_triple(c_red,c_yellow,c_green,hpp)
 						draw_healthbar(xx,yy,xx + lerp(0,ggui_frame_w[c],ggui_frame_element_halign[c,d]),yy + 12,hpp*100,c_black,ccc,ccc,0,true,true)
 						//Draw current health as text as well
-						draw_font_settings(font_n,c_white,1,0)
+						draw_font_settings(font_n,c_black,1,0)
 						draw_text(xx + lerp(0,ggui_frame_w[c],ggui_frame_element_halign[c,d]*0.5),yy + 14,tsprintf("HP: % / %",hpa,hpm))
 					}
 				break

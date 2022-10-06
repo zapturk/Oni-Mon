@@ -17,7 +17,7 @@ function msh_terminal_draw() {
 					xx, yy;
 			xx = lerp(ll,rr,0.1)
 			yy = lerp(tt,bb,0.1)
-			draw_font_settings(font_mainmsg,c_white,0,0)
+			draw_font_settings(font_mainmsg,c_black,0,0)
 			draw_text(xx,yy,amp_get_monster_name(monamp))
 	
 			var spr = global.monster_data[monmon,mond_SPRITE_BATTLE];
@@ -26,13 +26,13 @@ function msh_terminal_draw() {
 	
 			xx = lerp(ll,rr,0.20)
 			yy = tt + 40
-			draw_font_settings(font_nfat,c_white,0,0)
+			draw_font_settings(font_nfat,c_black,0,0)
 			draw_text(xx,   yy,tsprintf("Level %\n\nMHP: %\nATK: %\nDEF: %",	amp_read_var(monamp,amp_LEVEL),monster_get_mhp(monamp),monster_get_atk(monamp),monster_get_def(monamp)))
 			draw_text(xx+64,yy,tsprintf("\n\nMAG: %\nRES: %\nSPD: %",		monster_get_mag(monamp),monster_get_res(monamp),monster_get_spd(monamp)))
 	
 			yy = tt + 24
 			xx = lerp(ll,rr,0.5)
-			draw_font_settings(font_mainmsg,c_white,0,0)
+			draw_font_settings(font_mainmsg,c_black,0,0)
 			for(var c = 0; c < MONSTER_MAX_NUMBER_OF_MOVES; c++){
 				var mv = amp_read_var(monamp,AMP_FIRST_MOVE + c)
 				if(mv != NONE){

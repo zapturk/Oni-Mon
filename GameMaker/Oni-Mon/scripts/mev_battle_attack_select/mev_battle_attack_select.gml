@@ -23,7 +23,7 @@ function mev_battle_attack_select() {
 				with(instance_create_depth(x,y,depth-1,obj_gguimenu)){
 					ggui_frame(other.ggui_frame_l[0]+0.5*other.ggui_frame_w[0],room_height - 36*numtargs,other.ggui_frame_w[0]*0.5,36*numtargs,spr_messagebox)
 					ggui_menu_preallocate(1,numtargs)
-					ggui_element_text_settings(font_mainmsg,c_white,0,0)
+					ggui_element_text_settings(font_mainmsg,c_black,0,0)
 					for(var c = 0;c < numtargs;c++){
 						var d = (numtargs - 1) - c;//List in the opposite direction so topmost monster is on top of list (bottommost is actually first)
 						ggui_menu_add_option_text(mev_battle_attack_select_target,monster_get_name(targets[d].amp_id),"")

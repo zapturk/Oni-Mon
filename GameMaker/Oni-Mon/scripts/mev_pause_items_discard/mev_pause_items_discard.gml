@@ -12,9 +12,9 @@ function mev_pause_items_discard() {
 		    ggui_menu_preallocate(qty+1,1)
 		    ggui_frame_set_scrolling(true,false,1,1,false,false)
     
-		    ggui_element_text_settings(font_mainmsg,c_white,1,0)
+		    ggui_element_text_settings(font_mainmsg,c_black,1,0)
 		    ggui_element_text(0.5,ggui_frame_get_coord_y(12),"How many?\n<           >")
-		    ggui_element_text_settings(font_mainmsg,c_white,1,0)
+		    ggui_element_text_settings(font_mainmsg,c_black,1,0)
 		    ggui_element_arbtext_scrollable(0.5,ggui_frame_get_coord_y(12),0,0,0)
 
 		    for(var c = 0; c <= qty; c++){

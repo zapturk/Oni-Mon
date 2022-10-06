@@ -34,16 +34,16 @@ function msh_spawn_monster_list(argument0) {
 			ggui_element_healthbar(xx + ggui_frame_get_coord_x(70),yy + ggui_frame_get_coord_y(20),ww*0.6,mon)
 		
 			//Name, level
-			ggui_element_text_settings(font_mainmsg,c_white,0,0)
+			ggui_element_text_settings(font_mainmsg,c_black,0,0)
 			ggui_element_text(xx + ggui_frame_get_coord_x(70),yy,amp_get_monster_name(mon))
-			ggui_element_text_settings(font_nfat,c_white,0,0)
+			ggui_element_text_settings(font_nfat,c_black,0,0)
 			ggui_element_text(xx + 0.65*ww,yy,tsprintf("Lv. %",amp_read_var(mon,amp_LEVEL)))
 		
 			//Ailment, if any
 			if(global.active_monster_party[mon,amp_AILMENT] != NONE){
 				var xxx = xx + ggui_frame_get_coord_x(80) + ww*0.6
 				ggui_element_sprite(xxx,yy + ggui_frame_get_coord_y(20),spr_ailmenticons,global.active_monster_party[mon,amp_AILMENT])
-				ggui_element_text_settings(font_nfat,c_white,0,0)
+				ggui_element_text_settings(font_nfat,c_black,0,0)
 				ggui_element_text(xxx+ggui_frame_get_coord_x(18),yy + ggui_frame_get_coord_y(20),global.ailment_name[global.active_monster_party[mon,amp_AILMENT]])
 			}
 		}

@@ -11,7 +11,7 @@ if(instance_exists(parent_menu) || instance_exists(obj_cutscenecontrol)){
 //Pause menu
 if(k_st && !p_st){
 	with(instance_create_depth(x,y,-14000,obj_gguimenu)){
-		ggui_element_text_settings(font_mainmsg,c_white,0,0)
+		ggui_element_text_settings(font_mainmsg,c_black,0,0)
 		ggui_frame(0,0,VIEW_W*0.35,VIEW_H*0.75,spr_messagebox)
 		ggui_menu_preallocate(1,6)
 		ggui_frame_set_scrolling(false,false,1,6,false,true)
@@ -23,7 +23,7 @@ if(k_st && !p_st){
 		ggui_menu_add_option_text(mev_cancel,				"Close",			"Close this menu.")
 		
 		ggui_frame(0,VIEW_H*0.75,VIEW_W*0.35,VIEW_H*0.25,spr_messagebox)
-		ggui_element_text_settings(font_n,c_white,0,0)
+		ggui_element_text_settings(font_n,c_black,0,0)
 		ggui_element_desc_current(0.1,0.15)
 		
 		for(var c = 0;c < menu_h; c++){

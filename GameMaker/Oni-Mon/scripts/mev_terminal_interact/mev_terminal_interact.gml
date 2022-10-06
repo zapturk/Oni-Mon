@@ -68,7 +68,7 @@ function mev_terminal_interact() {
 					daddy      = other.id
 					ggui_frame(min(other.ghx,VIEW_W*0.65),min(other.ghy,VIEW_H-150),VIEW_W*0.35,150,spr_messagebox)
 					ggui_menu_preallocate(1,4)
-					ggui_element_text_settings(font_mainmsg,c_white,0,0)
+					ggui_element_text_settings(font_mainmsg,c_black,0,0)
 					ggui_menu_add_option_text(mev_terminal_grab,		"Grab",	    "")
 					ggui_menu_add_option_text(mev_pause_monsters_status,"Status",	"")
 					ggui_menu_add_option_text(mev_pause_monsters_item,	"Held Item","")

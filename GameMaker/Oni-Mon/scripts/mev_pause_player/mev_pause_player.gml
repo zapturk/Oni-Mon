@@ -13,20 +13,20 @@ function mev_pause_player() {
 		//Left frame: sprite
 		ggui_frame(0,0,VIEW_W*0.4,VIEW_H,spr_messagebox)
 		ggui_element_sprite(0.5,0.8,spr_player_portrait,0)
-		ggui_element_text_settings(font_mainmsg,c_white,0,0);
+		ggui_element_text_settings(font_mainmsg,c_black,0,0);
 		ggui_element_text(0.1,0.85,global.player_name)
 	
 		//Upper right frame: data
 		ggui_frame(VIEW_W*0.4,0,VIEW_W*0.6,VIEW_H*0.5,spr_messagebox)
-		ggui_element_text_settings(font_mainmsg,c_white,0,0); ggui_element_text(0.1,0.10,"Play Time");			ggui_element_text_settings(font_mainmsg,c_white,2,0);	ggui_element_text(0.9,0.10,string_fix_hhmmss(global.playtime_steps))
-		ggui_element_text_settings(font_mainmsg,c_white,0,0); ggui_element_text(0.1,0.26,"Money");				ggui_element_text_settings(font_mainmsg,c_white,2,0);	ggui_element_text(0.9,0.26,string(global.player_money) + "¤")
-		ggui_element_text_settings(font_mainmsg,c_white,0,0); ggui_element_text(0.1,0.42,"Species Seen");		ggui_element_text_settings(font_mainmsg,c_white,2,0);	ggui_element_text(0.9,0.42,string(global.monsters_seen_total))
-		ggui_element_text_settings(font_mainmsg,c_white,0,0); ggui_element_text(0.1,0.58,"Species Caught");		ggui_element_text_settings(font_mainmsg,c_white,2,0);	ggui_element_text(0.9,0.58,string(global.monsters_caught_total))
-		ggui_element_text_settings(font_mainmsg,c_white,0,0); ggui_element_text(0.1,0.74,"Max Level");			ggui_element_text_settings(font_mainmsg,c_white,2,0);	ggui_element_text(0.9,0.74,string(global.monsters_max_level))
+		ggui_element_text_settings(font_mainmsg,c_black,0,0); ggui_element_text(0.1,0.10,"Play Time");			ggui_element_text_settings(font_mainmsg,c_black,2,0);	ggui_element_text(0.9,0.10,string_fix_hhmmss(global.playtime_steps))
+		ggui_element_text_settings(font_mainmsg,c_black,0,0); ggui_element_text(0.1,0.26,"Money");				ggui_element_text_settings(font_mainmsg,c_black,2,0);	ggui_element_text(0.9,0.26,string(global.player_money) + "¤")
+		ggui_element_text_settings(font_mainmsg,c_black,0,0); ggui_element_text(0.1,0.42,"Species Seen");		ggui_element_text_settings(font_mainmsg,c_black,2,0);	ggui_element_text(0.9,0.42,string(global.monsters_seen_total))
+		ggui_element_text_settings(font_mainmsg,c_black,0,0); ggui_element_text(0.1,0.58,"Species Caught");		ggui_element_text_settings(font_mainmsg,c_black,2,0);	ggui_element_text(0.9,0.58,string(global.monsters_caught_total))
+		ggui_element_text_settings(font_mainmsg,c_black,0,0); ggui_element_text(0.1,0.74,"Max Level");			ggui_element_text_settings(font_mainmsg,c_black,2,0);	ggui_element_text(0.9,0.74,string(global.monsters_max_level))
 	
 		//Lower right frame: badges lineup
 		ggui_frame(VIEW_W*0.4,VIEW_H*0.5,VIEW_W*0.6,VIEW_H*0.5,spr_messagebox)
-		ggui_element_text_settings(font_mainmsg,c_white,0,0);
+		ggui_element_text_settings(font_mainmsg,c_black,0,0);
 		ggui_element_text(0.1,0.1,"League Emblems")
 		for(var c = 0;c < NUMBER_OF_BADGES; c++){
 			var hh, vv, xx, yy, col, aph;

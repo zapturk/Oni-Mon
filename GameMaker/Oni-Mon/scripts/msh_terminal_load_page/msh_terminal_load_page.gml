@@ -48,12 +48,12 @@ function msh_terminal_load_page(argument0) {
 		ggui_menu_region(leftcol + xcol,ycol,mev_terminal_interact,xx,yy,xx + ggui_frame_get_coord_x(64),yy + ggui_frame_get_coord_y(64))
 		cell_amp[leftcol + xcol,ycol] = amp
 	}
-	ggui_element_text_settings(font_mainmsg,c_white,1,0)
+	ggui_element_text_settings(font_mainmsg,c_black,1,0)
 	ggui_element_text(0.5,0.1,"Party")
 
 	//Middle top: Box Selector
 	ggui_frame(VIEW_W*0.30,0,VIEW_W*0.70,VIEW_H*0.15,spr_messagebox)
-	ggui_element_text_settings(font_mainmsg,c_white,1,1)
+	ggui_element_text_settings(font_mainmsg,c_black,1,1)
 	ggui_element_text(0.5,0.5,tsprintf("<  %  >",global.monster_box_name[argument0]))
 	ggui_menu_region(columns_party,0,NONE,0.05,0.25,0.95,0.75)
 

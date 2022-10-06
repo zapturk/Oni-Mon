@@ -12,11 +12,11 @@ function ggui_menu_add_option_shop(argument0, argument1) {
 	shop_cost[xx,yy] = global.item_data[argument1,id_PRICE]
 	shop_item[xx,yy] = argument1
 
-	ggui_element_text_settings(font_mainmsg,c_white,0,0)
+	ggui_element_text_settings(font_mainmsg,c_black,0,0)
 	draw_set_font(font_mainmsg)
 	s = global.item_data[argument1,id_NAME]
 	ggui_element_text(ll + 0.15*(rr-ll),tt + 0.5*(bb-tt) - 0.45*ggui_frame_get_coord_y(string_height(s)),s)
-	ggui_element_text_settings(font_n,c_white,2,2)
+	ggui_element_text_settings(font_n,c_black,2,2)
 	draw_set_font(font_n)
 	s = string(global.item_data[argument1,id_PRICE])
 	ggui_element_text(ll + 0.85*(rr-ll),tt + 0.5*(bb-tt) - 0.45*ggui_frame_get_coord_y(string_height(s)),s)

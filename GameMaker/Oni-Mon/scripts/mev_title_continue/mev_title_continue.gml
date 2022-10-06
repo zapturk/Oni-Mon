@@ -17,18 +17,18 @@ function mev_title_continue() {
 	    //Icon
 	    ggui_element_sprite_scrollable(0.1,yy + 0.1*hh,xxa,yya)
 	    //0 - Name (bigger text)
-	    ggui_element_text_settings(font_nfat,c_white,0,0)
+	    ggui_element_text_settings(font_nfat,c_black,0,0)
 	    ggui_element_arbtext_scrollable(0.1 + ggui_frame_get_coord_x(40),yy + 0.1*hh,xxa,yya,0)
     
 	    //1 - Class, level, 2 - playtime, 3 - saved area
-	    ggui_element_text_settings(font_n,c_white,0,0)
+	    ggui_element_text_settings(font_n,c_black,0,0)
 	    ggui_element_arbtext_scrollable(0.1 + ggui_frame_get_coord_x(40),yy + 0.5*hh,xxa,yya,1)
-	    ggui_element_text_settings(font_n,c_white,2,0)
+	    ggui_element_text_settings(font_n,c_black,2,0)
 	    ggui_element_arbtext_scrollable(0.9,                             yy + 0.1*hh,xxa,yya,2)
 	    ggui_element_arbtext_scrollable(0.9,                             yy + 0.5*hh,xxa,yya,3)
     
 	    //4 - Error message in center
-	    ggui_element_text_settings(font_nfat,c_white,1,1)
+	    ggui_element_text_settings(font_nfat,c_black,1,1)
 	    ggui_element_arbtext_scrollable(0.5,yy + 0.5*hh,xxa,yya,4)
 	}
 

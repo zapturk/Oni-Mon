@@ -20,9 +20,9 @@ function msh_spawn_namingmenu(argument0, argument1, argument2) {
 
 	//Info
 	ggui_frame(fcbsprsz,0,VIEW_W-fcbsprsz,fcbsprsz,spr_messagebox)
-	ggui_element_text_settings(font_nfat,c_white,0,2)
+	ggui_element_text_settings(font_nfat,c_black,0,2)
 	ggui_element_text(0.1,0.5,argument2)
-	ggui_element_text_settings(font_mainmsg,c_white,0,0)
+	ggui_element_text_settings(font_mainmsg,c_black,0,0)
 	name_entry_string_elm	= ggui_element_text(0.1,0.5,"")
 	name_entry_string_frame	= ggui_frames - 1
 
@@ -36,7 +36,7 @@ function msh_spawn_namingmenu(argument0, argument1, argument2) {
 	//We do this in a lot of other places too, but in those places the menus are linear instead
 	//of on a grid, making it trivial.
 
-	ggui_element_text_settings(font_mainmsg,c_white,0,0)
+	ggui_element_text_settings(font_mainmsg,c_black,0,0)
 
 	//Capital Letters
 	for(c = ord("A"); c <= ord("Z"); c++){
