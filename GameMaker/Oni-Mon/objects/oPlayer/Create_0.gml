@@ -19,3 +19,10 @@ yTo = yPos;
 
 walkAnimLen = 0.5;
 walkAnimTime = 0;
+
+dir = directions.down;
+
+image_speed = 0;
+image_index = 1;
+
+sprite = global.playerSprite;
