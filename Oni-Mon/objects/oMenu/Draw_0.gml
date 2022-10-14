@@ -67,7 +67,7 @@ if menu = 1 {
         draw_sprite_ext(catalog[select+scroll,1],2,__view_get( ViewWindow.XView, 0 )+36,__view_get( ViewWindow.YView, 0 )+36,1,1,0,catalog[select+scroll,4],1)
         draw_sprite_ext(catalog[select+scroll,1],3,__view_get( ViewWindow.XView, 0 )+36,__view_get( ViewWindow.YView, 0 )+36,1,1,0,c_white,1)
         //footprint
-        draw_sprite_ext(S_Footprint,select+scroll,__view_get( ViewWindow.XView, 0 )+136,__view_get( ViewWindow.YView, 0 )+8,1,1,0,c_white,1)
+        draw_sprite_ext(sFootprint,select+scroll,__view_get( ViewWindow.XView, 0 )+136,__view_get( ViewWindow.YView, 0 )+8,1,1,0,c_white,1)
         //name
         draw_set_font(Primary_Font); draw_set_color(c_white);
         draw_text(__view_get( ViewWindow.XView, 0 )+70,__view_get( ViewWindow.YView, 0 )+8,string_hash_to_newline(catalog[select+scroll,0]));

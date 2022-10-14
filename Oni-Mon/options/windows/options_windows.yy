@@ -2,7 +2,7 @@
   "resourceType": "GMWindowsOptions",
   "resourceVersion": "1.1",
   "name": "Windows",
-  "option_windows_display_name": "GameMaker: Studio",
+  "option_windows_display_name": "Oni-Mon",
   "option_windows_executable_name": "${project_name}",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "",

@@ -24,16 +24,8 @@ if(input_move != directions.idle) {
 	
 	// TODO: May need to switch this to a Swich block
 	// Runs the first check to see if it is a wall
-	StopMovement(oWall);
+	StopMovement(oParent);
 	
-	// if not runs seccond check if npc
-	if(speed != 0){
-		StopMovement(oNPC);
-	}
-	else {
-		// check if it is water
-		StopMovement(oWallWater);	
-	}
 }
 else {
     if(place_snapped(16,16)) {

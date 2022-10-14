@@ -11,6 +11,8 @@ fade = 0;
 Primary_Font = fMonogram;
 F_SmallFont = font_add_sprite(sSmallFont, ord(" "),0,1);
 
+depth = -100000000;
+
 // Monogram by Datagoblin
 // https://datagoblin.itch.io/monogram
 // twitter: @vmenezio
@@ -29,8 +31,8 @@ for(n=0;n<150;n+=1) {
 
 //-------------------copy and paste this box and change 'n' to add new monster--------------------------
 n=0;                                                                            // catalog number -1   |
-catalog[n,0] = "Lensy";                                                         // name                |
-catalog[n,1] = oniLensy;                                                        // sprite name         |
+catalog[n,0] = "Bat";                                                         // name                |
+catalog[n,1] = oniBat;                                                        // sprite name         |
 catalog[n,2] = make_colour_rgb(25, 30, 60);                                     // darkest color       |
 catalog[n,3] = make_colour_rgb(85, 100, 125);                                   // mid color           |
 catalog[n,4] = make_colour_rgb(165, 190, 205);                                  // light color         |
@@ -40,7 +42,7 @@ catalog[n,10] = "It is their mission to help people see things more clearly.";  
 //------------------------------------------------------------------------------------------------------
 //-------------------copy and paste this box and change 'n' to add new monster--------------------------
 n=1;                                                                            // catalog number -1   |
-catalog[n,0] = "Plank";                                                         // name                |
+catalog[n,0] = "Grass";                                                         // name                |
 catalog[n,1] = oniGrassStarter;                                                 // sprite name         |
 catalog[n,2] = make_colour_rgb(25, 30, 60);                                     // darkest color       |
 catalog[n,3] = make_colour_rgb(85, 100, 125);                                   // mid color           |
@@ -53,8 +55,8 @@ catalog[n,10] = "It is their mission to help people see things more clearly.";  
 //if you skip any numbers for n, they will show up as empty 'undiscovered' slots
 //-------------------copy and paste this box and change 'n' to add new monster--------------------------
 n=5;                                                                            // catalog number -1   |
-catalog[n,0] = "Orb";                                                           // name                |
-catalog[n,1] = oniOrb;                                                           // sprite name         |
+catalog[n,0] = "Fox";                                                           // name                |
+catalog[n,1] = oniFoxSnake;                                                           // sprite name         |
 catalog[n,2] = make_colour_rgb(65, 0, 65);                                      // darkest color       |
 catalog[n,3] = make_colour_rgb(170, 20, 60);                                    // mid color           |
 catalog[n,4] = make_colour_rgb(240, 105, 35);                                   // light color         |
