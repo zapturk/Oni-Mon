@@ -35,6 +35,6 @@
   ],
   "parent": {
     "name": "Walls",
-    "path": "folders/Objects/Walls.yy",
+    "path": "folders/Objects/Overworld/Walls.yy",
   },
 }
