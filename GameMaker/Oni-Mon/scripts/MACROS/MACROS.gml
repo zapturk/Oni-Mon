@@ -5,10 +5,12 @@ gml_pragma("global", "MACROS()");
 #macro RESOLUTION_H 144
 
 enum directions {
-	right,
-	up,
+	down,
 	left,
-	down
+	up,
+	right,
+	idle,
+	locked
 }
 
 global.playerLastDir = directions.down;
