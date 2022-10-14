@@ -1,0 +1,1 @@
+npcText[0] = "Broad Bay Pond. Swim at your own risk!"
