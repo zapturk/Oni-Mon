@@ -20,9 +20,15 @@
   ],
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_245B1B77","properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_245B1B77","path":"rooms/rParent/rParent.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_245B1B77","properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_245B1B77","path":"rooms/rParent/rParent.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3F95F77E","properties":[],"isDnd":false,"objectId":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":{"name":"inst_3F95F77E","path":"rooms/rParent/rParent.yy",},"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
-      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B9BDD29","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"tRoom","path":"objects/oNewRoom/oNewRoom.yy",},"objectId":{"name":"oNewRoom","path":"objects/oNewRoom/oNewRoom.yy",},"value":"rPHouse",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"playerX","path":"objects/oNewRoom/oNewRoom.yy",},"objectId":{"name":"oNewRoom","path":"objects/oNewRoom/oNewRoom.yy",},"value":"64",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"playerY","path":"objects/oNewRoom/oNewRoom.yy",},"objectId":{"name":"oNewRoom","path":"objects/oNewRoom/oNewRoom.yy",},"value":"112",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"playerDir","path":"objects/oNewRoom/oNewRoom.yy",},"objectId":{"name":"oNewRoom","path":"objects/oNewRoom/oNewRoom.yy",},"value":"directions.up",},
+          ],"isDnd":false,"objectId":{"name":"oNewRoom","path":"objects/oNewRoom/oNewRoom.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":96.0,},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Mid","tilesetId":{"name":"tsCrystal","path":"tilesets/tsCrystal/tsCrystal.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":20,"SerialiseHeight":18,"TileCompressedData":[
 -6,0,-58,-2147483648,5,1619,1620,1620,1621,1622,-15,-2147483648,5,1747,1748,1748,1749,1750,-15,-2147483648,
 5,2324,2321,2318,2319,1750,-15,-2147483648,5,2317,3021,2194,2319,1814,-55,-2147483648,-3,0,-4,-2147483648,
@@ -47,6 +53,7 @@
   "instanceCreationOrder": [
     {"name":"inst_245B1B77","path":"rooms/rPTown/rPTown.yy",},
     {"name":"inst_3F95F77E","path":"rooms/rPTown/rPTown.yy",},
+    {"name":"inst_5B9BDD29","path":"rooms/rPTown/rPTown.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,
