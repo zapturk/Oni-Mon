@@ -11,6 +11,8 @@ enum directions {
 	down
 }
 
+global.playerLastDir = directions.down;
+
 global.componets = [];
 global.componets[directions.right] = [1,0];
 global.componets[directions.up] = [0,-1];

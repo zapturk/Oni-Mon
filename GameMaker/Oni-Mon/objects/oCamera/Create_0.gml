@@ -14,4 +14,4 @@ fallow = oPlayer;
 xTo = x;
 yTo = y;
 
-moveSpeed = 25;
+moveSpeed = 2;
