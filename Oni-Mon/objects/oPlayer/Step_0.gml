@@ -1,4 +1,6 @@
 /// @description movement
+depth = -y;
+
 if (place_snapped(16,16)) {
 	face = global.playerLastDir;
     if (oMenu.menu == 0 && !instance_exists(oTextBox)) {
@@ -21,19 +23,15 @@ if input_move == 3 { if keyboard_check(vk_right) = 0 { input_move = directions.i
 if(input_move != directions.idle) {
     face = input_move;
     image_speed = .2;
-	
-	
-	// TODO: May need to switch this to a Swich block
-	// Runs the first check to see if it is a wall
 	StopMovement(oParent);
 	
 }
 else {
     if(place_snapped(16,16)) {
         speed = 0;
-        if floor(image_index) = 0 || floor(image_index) = 2 {
+        if(floor(image_index) = 0 || floor(image_index) = 2) {
             image_speed = 0;
-            }
         }
     }
+}
 
