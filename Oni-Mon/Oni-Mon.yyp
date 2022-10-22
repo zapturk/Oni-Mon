@@ -5,7 +5,7 @@
   "resources": [
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},"order":1,},
     {"id":{"name":"oniCherryBomb","path":"sprites/oniCherryBomb/oniCherryBomb.yy",},"order":8,},
-    {"id":{"name":"rPTown","path":"rooms/rPTown/rPTown.yy",},"order":6,},
+    {"id":{"name":"rOverworld","path":"rooms/rOverworld/rOverworld.yy",},"order":6,},
     {"id":{"name":"sSmallFont","path":"sprites/sSmallFont/sSmallFont.yy",},"order":5,},
     {"id":{"name":"S_Catalog","path":"sprites/S_Catalog/S_Catalog.yy",},"order":7,},
     {"id":{"name":"S_Border","path":"sprites/S_Border/S_Border.yy",},"order":9,},
@@ -98,7 +98,7 @@
     {"roomId":{"name":"rPHouse","path":"rooms/rPHouse/rPHouse.yy",},},
     {"roomId":{"name":"rGrassHT","path":"rooms/rGrassHT/rGrassHT.yy",},},
     {"roomId":{"name":"rSetup","path":"rooms/rSetup/rSetup.yy",},},
-    {"roomId":{"name":"rPTown","path":"rooms/rPTown/rPTown.yy",},},
+    {"roomId":{"name":"rOverworld","path":"rooms/rOverworld/rOverworld.yy",},},
     {"roomId":{"name":"rTEST","path":"rooms/rTEST/rTEST.yy",},},
     {"roomId":{"name":"rTEST2","path":"rooms/rTEST2/rTEST2.yy",},},
     {"roomId":{"name":"rParent","path":"rooms/rParent/rParent.yy",},},
